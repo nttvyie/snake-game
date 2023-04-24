@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -30,6 +30,7 @@ body {
 .game-details {
   color: #b8c6dc;
   font-weight: 500;
+  font-size: 1.2rem;
   padding: 20px 27px;
   display: flex;
   justify-content: space-between;
@@ -63,5 +64,26 @@ body {
   color: #b8c6dc;
   width: calc(100% / 4);
   cursor: pointer;
-  border-right: 1px solid #282b26;
+  border-right: 1px solid #171b26;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 90vmin;
+    height: 115vmin;
+  }
+
+  .game-details {
+    font-size: 1rem;
+    padding: 15px 27px;
+  }
+
+  .controls {
+    display: flex;
+  }
+
+  .controls i {
+    padding: 15px 0;
+    font-size: 1rem;
+  }
 }
