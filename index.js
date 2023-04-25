@@ -12,3 +12,7 @@ let velocityX = 0,
 let sankeBody = [];
 let setIntervalId;
 let score = 0;
+
+// Get high score from local storage
+let highScore = localStorage.getItem("high-score") || 0;
+highScoreElement.innerText = `High Score: ${highScore}`;
