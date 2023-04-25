@@ -45,3 +45,12 @@ const changeDirection = (e) => {
     velocityY = 0;
   }
 };
+
+// Change Direction on each ket click
+controls.forEach((button) =>
+  button.addEventListener("click", () =>
+    changeDirection({
+      key: button.dataset.key,
+    })
+  )
+);
